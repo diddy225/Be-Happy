@@ -1,0 +1,169 @@
+main {
+    height: 100%; 
+    background-color: #3C292B;
+    font-family: "source sans pro"; 
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+/*------ MOBILE VIEW START -----*/
+.container {
+    display: grid;
+    grid-gap: 3px; 
+    grid-template-rows: 18px 1fr 164px 1fr 164px 1fr 164px;
+    grid-template-columns: 42% 58%;
+    padding: 30px;
+}
+
+.container a {
+    grid-column: 1 / 3;
+    text-decoration: none;
+    color: white;
+    font-size: .9em;
+}
+
+.happy {
+    background-color: #ea3c4e;
+    padding: 110px 0 0 20px;
+}
+
+.happy h1 {
+    font-family: "Montserrat";
+    color: white;
+    font-size: 1.525em;
+    font-weight: bold;
+    line-height: 2;
+}
+
+.box-blue {
+    background-color: #89BBAD;
+    height: 100%;
+    padding: 5px 25px;
+}
+
+.box-blue p {
+    text-align: left;
+    font-size: .9em;
+    color: white;
+    line-height: 2;
+}
+
+/*---- IMAGES MOBILE-----*/
+.tie {
+    background-image: url(./images/tie.png);
+    grid-column: span 2;
+    background-position: 18% 0%;  
+}
+
+.sign {
+    background-image: url(./images/sign.jpg);
+    background-position: 20% 40%;
+    background-size: cover;
+}
+
+.moped {
+    background-image: url(./images/moped.jpg);
+    grid-column: span 2;
+    background-position: 0% 69%;
+    background-repeat: no-repeat;
+}
+
+.sax {
+    background-image: url(./images/sax.jpg);
+    background-position: 50% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.light {
+    background-image: url(./images/light.jpg);
+    grid-column: span 2;
+    background-position: 50% 50%;
+}
+
+.flower {
+    background-image: url(./images/flower.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+/*------- DESKTOP VIEW START -------*/
+
+@media only screen and (min-width: 850px) {
+
+    .container {
+        grid-template-rows: 18px 1fr 164px 1fr 164px 1fr 164px;
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .container a {
+        grid-column: span 5;
+    }
+
+    .happy h1 {
+        position: relative;
+        left: 25%;
+        bottom: 25%;
+    }
+
+    .box-blue {
+        padding: 50px 20px 35px 20px;
+    }
+
+    .box-blue p {
+        line-height: 2.3;
+    }
+
+    .happy-article {
+        grid-row: span 2;
+    }
+    
+    .sign-article {
+        grid-row: span 2;
+    }
+
+    .tie {
+        grid-row: span 2;
+        background-position: 30% 0%; 
+        background-size: cover;
+    }
+
+    .sign {
+        grid-row: span 2;
+    }
+
+    .sax {
+        grid-row: 5 / 6; 
+        background-position: 1% 60%;
+        background-size: auto 590px; 
+
+    }
+
+    .sax-article {
+        display: none;
+    }
+
+    .moped {
+        grid-row: span 2;
+        background-position: 50% 87%;
+        background-size: cover;
+    }
+
+    .light {
+        grid-column: span 1;
+    }
+
+    .flower {
+        grid-row: 5 / 6;
+        grid-column: 4 / 5;
+        background-position: 0% 70%;
+    }
+
+    .flower-article {
+        grid-row: span 2;
+    }
+
+}
