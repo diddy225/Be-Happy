@@ -26,7 +26,7 @@ main {
 
 .happy {
     background-color: #ea3c4e;
-    padding: 110px 0 0 20px;
+    text-align: justify;
 }
 
 .happy h1 {
@@ -35,6 +35,7 @@ main {
     font-size: 1.525em;
     font-weight: bold;
     line-height: 2;
+    padding: 100px 25px;
 }
 
 .box-blue {
@@ -67,6 +68,7 @@ main {
     background-image: url(./images/moped.jpg);
     grid-column: span 2;
     background-position: 0% 69%;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -104,9 +106,7 @@ main {
     }
 
     .happy h1 {
-        position: relative;
-        left: 25%;
-        bottom: 25%;
+       padding: 85px;
     }
 
     .box-blue {
